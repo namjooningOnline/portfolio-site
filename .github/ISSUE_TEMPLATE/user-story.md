@@ -7,12 +7,12 @@ assignees: ''
 
 ---
 
-### User Story: [Feature Name]
 **As a** [role],
 **I want** [action/feature],
 **So that** [reason/benefit].
    
 ### Acceptance Criteria: 
+- [ ] Criteria 1:
 **Given** [Scenario], 
 **When** [initial context],
 **Then**  [specific action], 
