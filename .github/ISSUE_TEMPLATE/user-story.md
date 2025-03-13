@@ -10,14 +10,14 @@ assignees: ''
 ### User Story: 
 **As a** [role],
 **I want** [action/feature],
-**So that** [reason/benefit].
+**so that** [reason/benefit].
    
 ### Acceptance Criteria: 
 - [ ] Criteria 1:
 **Given** [Scenario], 
-**When** [initial context],
-**Then**  [specific action], 
-**And** [expected result/outcome].
+**when** [initial context],
+**then**  [specific action], 
+**and** [expected result/outcome].
       
 ### Definition of Done: 
 - [ ] All acceptance criteria are met.
