@@ -82,7 +82,7 @@
             background: #eee;
         }
 
-        /* Social icons (header + contact) */
+        /* Social icons */
         .social-icons {
             margin-top: 15px;
         }
@@ -99,7 +99,6 @@
             transform: scale(1.2);
         }
 
-        /* Contact section icons */
         #contact .social-icons a {
             color: #167089;
         }
@@ -134,6 +133,85 @@
             border-left: 4px solid #167089;
         }
 
+        /* Skills Matrix */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .skill-box h3 {
+            margin-top: 0;
+            color: #1fa2c6;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            display: grid;
+            gap: 20px;
+        }
+
+        .testimonial {
+            background: #fff;
+            border-left: 4px solid #167089;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonial p {
+            margin: 0;
+            font-style: italic;
+        }
+
+        .testimonial span {
+            display: block;
+            margin-top: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            margin: 20px 0;
+            padding-left: 30px;
+            border-left: 3px solid #167089;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -12px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background: #167089;
+            border-radius: 50%;
+        }
+
+        .timeline-item h3 {
+            margin: 5px;
+            color: #1fa2c6;
+        }
+
+        .timeline-item span {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -162,7 +240,9 @@
     <nav>
         <a href="#about-me">About</a>
         <a href="#experience">Experience</a>
-        <a href="#working-together">Work With Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -172,7 +252,6 @@
         <h1>Andie Stokes</h1>
         <p>PMP • CSM • SAFe POPM | Project Management & Agile Solutions</p>
         <a href="AndieStokes.pdf" target="_blank" class="cta">Download CV</a>
-        <!-- Social icons in header -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/andiestokes" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/namjooningOnline" target="_blank"><i class="fab fa-github"></i></a>
@@ -186,7 +265,7 @@
         <section id="about-me">
             <h2>About Me</h2>
             <p>Certified project professional with experience in healthcare, education, and management. Fast-paced,
-                remote, and international background — ready to make a positive impact on your team!</p>
+                remote, and international background. Ready to make a positive impact on your team!</p>
         </section>
 
         <section id="experience">
@@ -200,21 +279,96 @@
             </ul>
         </section>
 
-        <section id="working-together">
-            <h2>Let’s Work Together If...</h2>
-            <ul>
-                <li>Your projects are falling behind and need realignment</li>
-                <li>Your team struggles with communication and alignment</li>
-                <li>You need help prioritizing competing demands</li>
-                <li>You want deadlines met without burning out your team</li>
-                <li>You have global or remote teams needing cross-cultural collaboration</li>
-            </ul>
+        <!-- Skills Matrix -->
+        <section id="skills">
+            <h2>Skills Matrix</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Project Tools</h3>
+                    <p>Jira, Asana, Trello, GitHub Projects, MS Project</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Frameworks</h3>
+                    <p>Scrum, SAFe, Kanban, Agile</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Certifications</h3>
+                    <p>PMP, CAPM, CSM, SAFe POPM</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Soft Skills</h3>
+                    <p>Cross-cultural communication, Leadership, Remote collaboration, Stakeholder management, Problem
+                        solving, Critical thinking</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Languages</h3>
+                    <p>English, Spanish, Korean</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section id="timeline">
+            <h2>Career Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Project Coordinator</h3>
+                    <span>2024 – present</span>
+                    <p>Coordinated production schedules, managed contractor relationships, and led weekly status report
+                        meetings</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Case Manager</h3>
+                    <span>2023 – 2024</span>
+                    <p>Managed healthcare cases, coordinated with multidisciplinary teams, and improved client outcomes.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>ESL Teacher (South Korea)</h3>
+                    <span>2019 – 2023</span>
+                    <p>Designed curriculum, prepared students for TOEFL, and led cross-cultural learning experiences.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Pharmacy Technician</h3>
+                    <span>2013 – 2019</span>
+                    <p>Supported pharmacists, ensured accuracy in prescriptions, and optimized pharmacy workflow.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>B.S. Human Environmental Sciences</h3>
+                    <span>University of Alabama</span>
+                    <p>Graduated with honors and a strong foundation in poeple management and sciences.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Andie has an incredible ability to bring clarity and structure to complex projects while keeping
+                        the team motivated."</p>
+                    <span>— Margaret Hyder, Current Manager</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Andie made me feel heard and supported every step of the way. She connected me with the right
+                        resources, followed up to make sure I was okay, and genuinely cared about my progress. I
+                        wouldn’t be where I am today without her guidance."</p>
+                    <span>— Client Testimonial</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Teaching alongside Andie in Korea was a privilege. She always brought positivity and
+                        professionalism to the staff room and was the first to offer help when others needed support.
+                        Her ability to collaborate and share resources made our whole team stronger."</p>
+                    <span>— Professional Colleague</span>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
             <p><a href="mailto:andieleestokes@gmail.com">AndieLeeStokes@gmail.com</a></p>
-            <!-- Social icons in contact -->
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/andiestokes" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/namjooningOnline" target="_blank"><i class="fab fa-github"></i></a>
