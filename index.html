@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andie Stokes | PMP, CSM, SAFe</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
@@ -81,6 +82,32 @@
             background: #eee;
         }
 
+        /* Social icons (header + contact) */
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            font-size: 1.8rem;
+            margin: 0 12px;
+            color: white;
+            transition: transform 0.2s ease, color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffd166;
+            transform: scale(1.2);
+        }
+
+        /* Contact section icons */
+        #contact .social-icons a {
+            color: #167089;
+        }
+
+        #contact .social-icons a:hover {
+            color: #1fa2c6;
+        }
+
         /* Content container */
         .container {
             max-width: 900px;
@@ -145,6 +172,13 @@
         <h1>Andie Stokes</h1>
         <p>PMP • CSM • SAFe POPM | Project Management & Agile Solutions</p>
         <a href="AndieStokes.pdf" target="_blank" class="cta">Download CV</a>
+        <!-- Social icons in header -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/andiestokes" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/namjooningOnline" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/andiestokes/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/AndieLeeStokes" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
     </header>
 
     <!-- Content -->
@@ -180,6 +214,7 @@
         <section id="contact">
             <h2>Contact</h2>
             <p><a href="mailto:andieleestokes@gmail.com">AndieLeeStokes@gmail.com</a></p>
+            <!-- Social icons in contact -->
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/andiestokes" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/namjooningOnline" target="_blank"><i class="fab fa-github"></i></a>
@@ -187,7 +222,6 @@
                 <a href="https://www.facebook.com/AndieLeeStokes" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
         </section>
-
 
         <section class="references">
             <h2>Professional References</h2>
